@@ -30,6 +30,7 @@ body{
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.8rem;
     font-weight: 400;
+    line-height: 1.4rem;
 }
 /* header section start from here */
 .container{
@@ -210,6 +211,49 @@ margin-top: 3.2rem;
 .hitem_container img{
   border-radius: 50%;
 }
+/* run_miles section start here */
+
+.run_containt{
+    display:flex;
+    /* justify-content: space-between; */
+    border:1px solid white;
+    background-color: rgb(34, 34, 34);
+    border-radius: 1.4rem;
+    padding:3rem 4rem;
+    border:none;
+    gap:9rem;
+
+}
+.run_container{
+    max-width:50%;
+}
+/* .run_img{
+width:350px;
+height: 300px;
+border:1px solid red;
+background-image: url("../images/run.jpg");
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+overflow:hidden;
+border-radius: 1.4rem;
+} */
+ .run_img{
+    max-width:50%;
+    /* border:1px solid red; */
+    /* overflow:hidden; */
+ }
+ .run_img img{
+     width:100%;
+    overflow:hidden;
+    height:100%;
+    border-radius: 1.4rem;
+    /* transform: scale(1.2); */
+ }
+.joinnow{
+margin-top:2.1rem;
+}
+
 /* responsive */
 @media screen and (max-width:576px){
     .nav_item{
@@ -254,5 +298,19 @@ margin-top: 3.2rem;
         /* gap:3rem;
         margin-top: 3.2rem; */
         }
-    
+        .run_containt{
+          flex-direction: column;
+          gap:2rem;
+        
+        }
+        .run_container{
+            max-width:100%;
+        }
+        .joinnow{
+            padding:1rem 3.4rem;
+            font-size: 0.8rem;
+            }
+            .run_img{
+           max-width:100%;
+                }
 }
