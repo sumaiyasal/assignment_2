@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.cdnfonts.com/css/miama');
+
+.shape{
+    font-family: 'Miama', sans-serif;
+    font-size: 8rem;
+    font-weight: 100;
+    line-height:0;
+                                                
+}
+body{
+    font-family: "Inter", sans-serif;
+    /* background-color: rgba(0, 0, 0); */
+    color:white;
+   
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header section start from here */
+.container{
+    max-width:80%;
+    margin:0 auto;
+    /* margin-top: 2rem; */
+    /* border:1px solid red; */
+}
+header{
+    background-color: rgb(0, 0, 0);
+    background-image:linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0.26) 100%);
+   
+
+}
+nav,.nav_item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.8rem;
+}
+.nav_item{
+    border:1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 2.4rem;
+    padding:2px;
+}
+.nav_item p{
+    margin-right: 2.8rem;
+    padding:10px 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color:white;
+}
+.bar{
+    display:none;
+}
+.brand{
+    font-size: 2rem;
+    font-weight: 800;
+    color:rgb(230, 83, 60);
+    font-style: italic;
+}
+.home{
+    background-color: rgb(230, 83, 60);
+    border-radius:2.4rem;
+    padding:10px 24px;
+ 
+}
+.banner_container{
+    /* border:1px solid red; */
+    display:flex;
+    justify-content: space-between;
+    margin-top: 1.8rem;
+
+}
+.banner_contant{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+.banner_title{
+    font-size: 4.5rem;
+    font-weight: 900;
+    color:white;
+    
+}
+.banner_des{
+font-size:1rem;
+font-weight: 400;
+color:rgba(255, 255, 255, 0.5);
+margin:1.4rem 0;
+line-height: 1.5rem;
+}
+.banner_img{
+    width:40%;
+    /* border:1px solid white; */
+    position:relative;
+}
+.banner_img img{
+    max-width:100%;
+}
+.download{
+  background-color: rgba(0, 0, 0, 0.164);;
+  border:0.1rem solid white;
+
+}
+button{
+    padding:0.9rem 2.5rem;
+    border-radius: 3rem;
+    border:none;
+color:rgb(255, 255, 255);
+font-size: 1.1rem;
+font-weight: 500;
+background-color: rgb(230, 83, 60);
+margin-right:0.5rem;
+cursor: pointer;
+}
+
+.workout{
+    position:absolute;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding:1rem 1.4rem;
+    top:130px;
+    right:0px;
+    border-radius: 0.8rem;
+}
+.workout h2{
+    color:white;
+    font-size: 2.6rem;
+}
+.tutorial h2{
+    color:white;
+    font-size: 1.8rem; 
+}
+.workout p,.tutorial p{
+    line-height: 1rem;
+    font-size:1rem;
+font-weight: 400;
+color:rgba(255, 255, 255, 0.5);
+}
+.roundd{
+    background: rgb(230, 83, 60);
+    width:2.2rem;
+    height:2.2rem;
+    border-radius: 50%;
+}
+.tutorial{
+    display:flex;
+    align-items: center;
+    gap:1rem;
+    padding:1rem 1.4rem;
+    border-radius: 0.8rem;
+    backdrop-filter: blur(8px);
+    background-color: rgba(48, 48, 48, 0.54);
+    position: absolute;
+    bottom:80px;
+    left:-100px;
+}
+/* responsive */
+@media screen and (max-width:576px){
+    .nav_item{
+        display: none;
+    }
+    .bar{
+        display: block;
+    }
+    .banner_container{
+        flex-direction: column;
+    }
+    .banner_contant,.banner_img{
+        width:100%;
+       
+    }
+    button{
+        padding:0.5rem;
+    }
+    .workout{
+        top:40px;
+        right:-20px;
+        padding:0.7rem;
+    }
+    .workout h2{
+   
+        font-size: 2rem;
+    }
+    .workout p,.tutorial p{
+        font-size:0.8rem;
+    font-weight: 200;
+   
+    }
+    .tutorial h2{
+        font-size: 1.5rem; 
+    }
+    .tutorial{
+        bottom:260px;
+        left:20px;
+    }
+}
