@@ -28,7 +28,7 @@ body{
 }
 .descrip{
     color: rgba(255, 255, 255, 0.5);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.4rem;
 }
@@ -253,7 +253,86 @@ border-radius: 1.4rem;
 .joinnow{
 margin-top:2.1rem;
 }
+/* bmi calculator section */
+.bmi_container
+{
+    text-align: center;
+}
+.bmi{
+    max-width:100%;
+}
+.bmi_calc{
+    background-color: rgb(34, 34, 34);
+     padding:60px 130px;
+}
+table,th,td{
+    border:1px solid rgba(255, 255, 255, 0.1);
+    border-collapse: collapse;
+    text-align: left;
+  
+}
+th{
+    font-size: 1rem;
+    font-weight: 500;
+    padding:1rem;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0.8rem 1.5rem;
+}
+.bmi_chart h2,.calculate h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom:40px;
 
+}
+.bmi_chart{
+    max-width:50%;
+}
+.bmi_calc{
+    display:flex;
+   justify-content: space-between;
+   margin-top:5rem;
+}
+.calculate{
+    max-width: 50%;
+    /* padding-left:500px; */
+}
+input{
+    padding:0.8rem 2.4rem 0.8rem 1.4rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom:0.8rem;
+    margin-right:0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+.gender,.activity{
+    padding:0.8rem 11.5rem 0.8rem 1.4rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom:0.8rem;
+    margin-right:0.8rem;
+    color: rgba(255, 255, 255, 0.6);
+}
+.activity{
+    padding:0.8rem 20rem 0.8rem 1.4rem;
+}
+.calculate p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+}
+.calcc{
+    padding:1rem 5rem;
+}
 /* responsive */
 @media screen and (max-width:576px){
     .nav_item{
@@ -312,5 +391,25 @@ margin-top:2.1rem;
             }
             .run_img{
            max-width:100%;
+                }
+                .bmi_calc{
+                    flex-direction: column;
+                    padding:10px;
+                }
+                .bmi_chart,.calculate{
+                    max-width:100%;
+                }
+                input{
+                    width:42%;
+                    margin-right: 0.5rem;
+                    padding:0.8rem;
+                }
+                 .gender{
+                    padding:0.8rem;
+                   width:42%;
+                 }
+                .activity{
+                    width:90%;
+                    padding:0.8rem;
                 }
 }
