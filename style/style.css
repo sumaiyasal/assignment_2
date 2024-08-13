@@ -19,6 +19,18 @@ body{
     padding: 0;
     box-sizing: border-box;
 }
+/* shared section */
+.title{
+    color:rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom:0.8rem;
+}
+.descrip{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.8rem;
+    font-weight: 400;
+}
 /* header section start from here */
 .container{
     max-width:80%;
@@ -69,7 +81,7 @@ nav,.nav_item{
     /* border:1px solid red; */
     display:flex;
     justify-content: space-between;
-    margin-top: 1.8rem;
+    margin-top: 2rem;
 
 }
 .banner_contant{
@@ -95,14 +107,18 @@ line-height: 1.5rem;
 }
 .banner_img{
     width:40%;
-    /* border:1px solid white; */
+
     position:relative;
+    bottom:-5px;
+}
+.imagee{
+    width:100%;
 }
 .banner_img img{
     max-width:100%;
 }
 .download{
-  background-color: rgba(0, 0, 0, 0.164);;
+  background-color: rgba(0, 0, 0, 0.164);
   border:0.1rem solid white;
 
 }
@@ -160,6 +176,40 @@ color:rgba(255, 255, 255, 0.5);
     bottom:80px;
     left:-100px;
 }
+/* main section start from here */
+/* habbit section */
+main{
+    background-color: black;
+}
+section{
+    padding-top: 5.8rem;
+    max-width:80%;
+    margin:0 auto;
+
+}
+
+.habbit{
+    text-align: center;
+    /* border:1px solid red; */
+}
+.habbit_item{
+display:flex;
+gap:3rem;
+margin-top: 3.2rem;
+}
+.htitle{
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top:1.8rem;
+    margin-bottom: 0.6rem;
+}
+.hitem_container{
+    /* border:1px solid red; */
+}
+.hitem_container img{
+  border-radius: 50%;
+}
 /* responsive */
 @media screen and (max-width:576px){
     .nav_item{
@@ -199,4 +249,10 @@ color:rgba(255, 255, 255, 0.5);
         bottom:260px;
         left:20px;
     }
+    .habbit_item{
+     flex-direction: column;
+        /* gap:3rem;
+        margin-top: 3.2rem; */
+        }
+    
 }
