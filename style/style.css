@@ -32,6 +32,7 @@ body{
     font-size: 0.9rem;
     font-weight: 400;
     line-height: 1.4rem;
+    /* text-align:center; */
 }
 /* header section start from here */
 .container{
@@ -213,7 +214,14 @@ margin-top: 3.2rem;
   border-radius: 50%;
 }
 /* run_miles section start here */
-
+.des{
+    text-align: justify;
+}
+.desl{
+    width:50%;
+    margin :0 auto;
+    text-align: left;
+}
 .run_containt{
     display:flex;
     /* justify-content: space-between; */
@@ -313,7 +321,7 @@ input{
     color: rgba(255, 255, 255, 0.6);
 }
 .gender,.activity{
-    padding:0.8rem 11.5rem 0.8rem 1.4rem;
+    padding:0.8rem 10.1rem 0.8rem 1.4rem;
     border-radius: 0.5rem;
     border: none;
     font-size: 1rem;
@@ -586,16 +594,20 @@ transform:scale(1.05);
                 }
                 .bmi_calc{
                     flex-direction: column;
-                    padding:10px;
+                    padding:30px;
                 }
                 .bmi_chart,.calculate{
                     max-width:100%;
+                }
+                .calculate{
+                    margin-top: 2rem;
                 }
                 input{
                     width:42%;
                     margin-right: 0.5rem;
                     padding:0.8rem;
                 }
+                
                  .gender{
                     padding:0.8rem;
                    width:42%;
@@ -631,6 +643,10 @@ transform:scale(1.05);
                    
                     width:auto;
                     /* border:1px solid red; */
+                }
+                .desl{
+                    width:80%;
+                    
                 }
                 
 
