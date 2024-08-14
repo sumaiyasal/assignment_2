@@ -320,6 +320,11 @@ input{
     margin-right:0.8rem;
     color: rgba(255, 255, 255, 0.6);
 }
+::placeholder{
+    color: rgba(255, 255, 255, 0.6);  
+    font-size: 1rem;
+    font-weight: 400;
+}
 .gender,.activity{
     padding:0.8rem 10.1rem 0.8rem 1.4rem;
     border-radius: 0.5rem;
